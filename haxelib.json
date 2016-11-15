@@ -1,0 +1,17 @@
+{
+	"name": "canvasMarkdown",
+	"license": "MIT",
+	"tags": ["canvas","svg"],
+	"description": "canvasMarkdown helps display Markdown on Canvas via ForeignObject",
+	"contributors": [
+    "Nanjizal"
+  ],
+	"releasenote": "See https://github.com/nanjizal/canvasMarkdown/blob/master/readme.md",
+	"version": "0.0.1",
+	"url": "https://github.com/nanjizal/canvasMarkdown",
+	"classPath": "/",
+	"dependencies": 
+	{ 
+    "markDown"
+	}
+}
