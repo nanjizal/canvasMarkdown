@@ -5,6 +5,7 @@ import js.html.Element;
 import js.html.CSSStyleDeclaration;
 import js.html.Node;
 import js.html.svg.GraphicsElement;
+@:forward( appendChild, removeChild )
 abstract SvgRoot( SVGElement ) from SVGElement to SVGElement {
     inline public static var svgNameSpace: String = "http://www.w3.org/2000/svg" ;
     inline public function new( ?e: SVGElement ){
@@ -26,14 +27,6 @@ abstract SvgRoot( SVGElement ) from SVGElement to SVGElement {
         Browser.document.body.appendChild( element );
         var svgRoot: SvgRoot = svgElement;
         return svgRoot;
-    }
-    inline public function add( element: SVGElement ):Void {
-        var node: Node = cast element;
-        this.appendChild( node );
-    }
-    inline public function addForeign( element: GraphicsElement ):Void {
-        var node: Node = cast element;
-        this.appendChild( node );
     }
     public var width( get, set ): Int;
     inline public function set_width( width_: Int ):Int {
