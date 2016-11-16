@@ -61,6 +61,6 @@ abstract SvgForeign( ForeignObjectElement ) from ForeignObjectElement to Foreign
         width = Std.int( div.offsetWidth );
         height = Std.int( div.offsetHeight );
         doc.body.removeChild( div );
-        this.appendChild( cast( div, Node ) );
+        this.appendChild( div );
     }
 }
