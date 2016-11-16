@@ -5,6 +5,7 @@ import js.html.svg.ForeignObjectElement;
 import js.html.DivElement;
 import js.html.Node;
 using Markdown;
+@:forward( appendChild, removeChild )
 abstract SvgForeign( ForeignObjectElement ) from ForeignObjectElement to ForeignObjectElement {
     inline public static var svgNameSpace: String = "http://www.w3.org/2000/svg" ;
     static inline var _FONT = '</FONT>';
