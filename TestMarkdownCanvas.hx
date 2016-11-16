@@ -3,7 +3,7 @@ import canvasMarkdown.CanvasMarkdown;
 import js.html.Uint8ClampedArray;
 class TestMarkdownCanvas{ public static function main(){ new TestMarkdownCanvas(); }
     var w: Int = 800;
-    var h: Int = 4000;
+    var h: Int = 2000;
     var canvasMarkdown: CanvasMarkdown;
     public function new(){
         canvasMarkdown = new CanvasMarkdown( 10, 10, w, h );
