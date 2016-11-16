@@ -71,7 +71,7 @@ class CanvasMarkdown {
         svgForeign.x = 0;
         svgForeign.y = 0;
         svgForeign.markDown( content_ );
-        svgRoot.addForeign( svgForeign );
+        svgRoot.appendChild( svgForeign );
         return svgForeign;
     }
 }
